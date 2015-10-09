@@ -28,3 +28,7 @@ This theme is desiged for FarBox,You can use it directly or modified it on FarBo
 ### 反馈
 
 如果遇到问题，欢迎@我，或者提Issues给我～
+
+### License
+
+Anatole is released under the MIT license.
