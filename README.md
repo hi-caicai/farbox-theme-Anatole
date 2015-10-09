@@ -5,6 +5,7 @@ This theme is desiged for FarBox,You can use it directly or modified it on FarBo
 
 ![](https://hicaicai.b0.upaiyun.com/work/asdjhkj3.png)
 
+![](https://hicaicai.b0.upaiyun.com/work/ahjsgd73.png)
 ### 快速使用
 
 拷贝仓库最新的代码到你的Farbox博客template文件内
