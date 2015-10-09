@@ -1,4 +1,4 @@
-# farbox-theme-Mind
+# farbox-theme-Anatole
 This theme is desiged for FarBox,You can use it directly or modified it on FarBox 
 
 这是一款为Farbox博客设计的主题，博客为左右两栏设计，左边一栏可以放个人简介，右边是博客列表
