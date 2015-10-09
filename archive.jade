@@ -1,0 +1,16 @@
+from mixins import make_pager
+extends base.jade
+block content
+	.autopagerize_page_element:.content
+		.archive.animated.fadeInDown
+			ul.list-with-title
+				entries = get_data(type='post',limit=300, sort='desc').group('-date:year')
+				for year, posts in entries
+					div.listing-title= year
+					ul.listing
+						for post in posts
+							.listing-item
+								.listing-post
+									a(href=post.url, title=post.title)= post.title
+									div.post-time
+										span.date= post.date.format("%m-%d")

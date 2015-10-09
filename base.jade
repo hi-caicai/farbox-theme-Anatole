@@ -1,0 +1,86 @@
+html
+	+i18n('Home', '首页', 'zh_cn')
+	+i18n('Albums', '相册', 'zh_cn')
+	+i18n('Categories', '分类', 'zh_cn')
+	+i18n('Archive', '归档', 'zh_cn')
+	+i18n('Tags', '标签', 'zh_cn')
+	+i18n('About', '关于', 'zh_cn')
+	+i18n('Links', '友链', 'zh_cn')
+	head
+		meta(http-equiv="Content-Type", content="text/html; charset=UTF-8")
+		block title
+			title= post.title or site.title
+		+mobile_meta()
+		meta(name="author", content="CaiCai,hi@cai-cai.me")
+		meta(name="keywords", content=site.configs.keywords.escaped)
+		meta(name="description", content=site.raw_content.escaped)
+		link(rel="stylesheet", type="text/css", href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin,latin-ext")
+		link(rel="shortcut icon", href="/template/style/images/favicon.png",type="image/x-icon")
+		+load('font')
+		+get_resource("blog_basic.css")
+		+load('/template/style/css/style.scss')
+	body
+		.sidebar
+			.logo-title
+				.title.animated.fadeInDown
+					img(src="/template/style/images/logo@2x.png",style="width:127px;")
+					h3(title="")
+						a(href="https://www.caicai.me") {{ site.title }}
+					if site.raw_content
+						.description.animated.fadeInDown
+							p= '%s' % site.raw_content[:100]
+
+			ul.social-links.animated.fadeInDown
+				if site.configs.twitter
+				    li
+						a(href="https://twitter.com/{{site.configs.twitter}}")
+							i.fa.fa-twitter
+				if site.configs.instagram
+					li
+						a(href="http://instagram.com/{{site.configs.instagram}}")
+							i.fa.fa-instagram
+				if site.configs.dribbble
+					li
+						a(href="https://dribbble.com/{{site.configs.dribbble}}")
+							i.fa.fa-dribbble
+				if site.configs.weibo
+					li
+						a(href="http://weibo.com/{{site.configs.weibo}}")
+							i.fa.fa-weibo
+			.footer
+				a(target="_blank", href="http://{{request.domain}}")
+					span Designed by 
+					a(href="https://www.caicai.me")  CaiCai
+					.by_farbox
+						a(href="http://www.farbox.com", target="_blank") Proudly published with Farbox&#65281;
+		.main
+			.page-top.animated.fadeInDown
+				.nav
+					li
+						if request.url_without_host=='/'
+							a.current(href="/") Home					
+						else
+							a(href="/") Home
+					li
+						if request.url_without_host=='/about'
+							a.current(href="/about") About					
+						else
+							a(href="/about") About
+					li
+						if request.url_without_host=='/archive'
+							a.current(href="/archive") Archive
+						else
+							a(href="/archive") Archive
+				.information					
+					.back_btn
+						li
+							if post
+								a.fa.fa-chevron-left(onclick="window.history.go(-1)") 
+							else
+								a.fa.fa-chevron-left(onclick="window.history.go(-1)",style="display:none;") 
+					.avatar
+						img(src=site.avatar)
+			block content
+		+load('jquery')
+		+load("/template/style/js/jquery-migrate-1.2.1.min.js")
+		+load("/template/style/js/jquery.appear.js")

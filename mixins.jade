@@ -1,0 +1,29 @@
+mixin make_post(post, is_detail=False)
+	.post.animated.fadeInDown
+		.post-title
+			h3
+				if is_detail
+					a= post.title
+				else
+					a(href="{{post.url}}")= post.title
+		if is_detail
+			.post-content= post.content
+		else
+			.post-content= post.content.limit(200).no_pic
+		.post-footer:.meta
+			.info
+				i.fa.fa-calendar
+				span.date= post.date.format("%Y-%m-%d")
+				if site.configs.disqus
+					i.fa.fa-comment-o
+					a(href="{{post.url}}#disqus_thread") Comments
+mixin make_pager(pre_text, next_text)
+	.pagination
+		ul.clearfix
+			if paginator.has_next
+				li.next.pagbuttons
+					a.btn(role="navigation",href="{{ paginator.next_page_url}}")= next_text
+
+			if paginator.has_previous
+				li.pre.pagbuttons
+					a.btn(role="navigation",href="{{ paginator.previous_page_url }}")= pre_text

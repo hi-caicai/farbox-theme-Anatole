@@ -1,0 +1,54 @@
+[
+    {},
+    {},
+    {},
+    {},
+    {
+        "title": "Extra",
+        "title_zh_cn": "更多",
+        "icon": "align-justify",
+        "groups":[
+            {
+                "title": "My Social",
+                "title_zh_cn": "我的社交",
+                "cells":[
+                    {
+                        "parts_per_line": 4,
+                        "parts":[
+                            {
+                                "key": "weibo",
+                                "title": "Weibo",
+                                "title_zh_cn": "微博",
+                                "placeholder": "WeiBo ID",
+                                "model": "text"
+                            },
+                            {
+                                "key": "twitter",
+                                "title": "Twitter",
+                                "placeholder": "Twitter ID",
+                                "model": "text"
+                            }
+                            ,
+                            {
+                                "key": "instagram",
+                                "title": "Instagram",
+                                "placeholder": "Instagram ID",
+                                "model": "text"
+                            }
+                            ,
+                            {
+                                "key": "dribbble",
+                                "title": "Dribbble",
+                                "placeholder": "Dribbble ID",
+                                "model": "text"
+                            }
+                        ]
+                    }
+                ]
+
+
+
+            }
+        ]
+    }
+]
