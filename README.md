@@ -6,6 +6,8 @@ This theme is desiged for FarBox,You can use it directly or modified it on FarBo
 ![](https://hicaicai.b0.upaiyun.com/work/asdjhkj3.png)
 
 ![](https://hicaicai.b0.upaiyun.com/work/ahjsgd73.png)
+
+
 ### 快速使用
 
 拷贝仓库最新的代码到你的Farbox博客template文件内
@@ -18,12 +20,19 @@ This theme is desiged for FarBox,You can use it directly or modified it on FarBo
 ![](https://hicaicai.b0.upaiyun.com/work/2123asudy.png)
 ![](https://hicaicai.b0.upaiyun.com/work/shajgdu3.png)
 
+
+### Ghost博客版本
+
+[@ygbhf](http://yangjinkun.cn/) 童鞋,制作了ghost 版本，如果有需要移步到他的 [仓库](https://github.com/ygbhf/anatole-ghost-theme), 万分感谢@ygbhf 移植～
+
+
 ### 说明
 
 - 主题默认使用了谷歌字体，如果加载速度不满意，请自行切换
 - About页面，是一个简单的demo，可以自由发挥
 - 默认分页加载文章，如果需要全部加载，请到后台系统设置文章数为一个比较大的数字，比如“9999”，这样分页按钮消失
 - 没有做IE一些老的浏览器的适配～
+- 手机端隐藏了About 等页面，如果需要，请在样式文件最下面的适配代码中取消
 
 ### 反馈
 
