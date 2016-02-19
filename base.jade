@@ -20,17 +20,17 @@ html
 		+get_resource("blog_basic.css")
 		+load('/template/style/css/style.scss')
 	body
-		.sidebar
+		.sidebar.animated.fadeInDown
 			.logo-title
-				.title.animated.fadeInDown
+				.title
 					img(src="/template/style/images/logo@2x.png",style="width:127px;")
 					h3(title="")
-						a(href="https://www.caicai.me") {{ site.title }}
+						a(href="/") {{ site.title }}
 					if site.raw_content
-						.description.animated.fadeInDown
+						.description
 							p= '%s' % site.raw_content[:100]
 
-			ul.social-links.animated.fadeInDown
+			ul.social-links
 				if site.configs.twitter
 				    li
 						a(href="https://twitter.com/{{site.configs.twitter}}")
@@ -41,7 +41,7 @@ html
 							i.fa.fa-instagram
 				if site.configs.dribbble
 					li
-						a(href="https://dribbble.com/{{site.configs.dribbble}}")
+						a(href="https://dribbbble.com/{{site.configs.dribbble}}")
 							i.fa.fa-dribbble
 				if site.configs.weibo
 					li
