@@ -1,0 +1,7 @@
+from mixins import make_post, make_pager
+extends base.jade
+block content
+	.autopagerize_page_element:.content
+		for post in posts
+			+make_post(post, is_detail=False)
+		+make_pager('Newer Posts', 'Older Posts')

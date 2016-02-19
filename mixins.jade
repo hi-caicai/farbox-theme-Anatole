@@ -17,6 +17,10 @@ mixin make_post(post, is_detail=False)
 				if site.configs.disqus
 					i.fa.fa-comment-o
 					a(href="{{post.url}}#disqus_thread") Comments
+				if post.tags
+					i.fa.fa-tag
+					for tag in post.tags
+						a.tag(href='/tags/{{tag}}') &nbsp;{{tag}}
 mixin make_pager(pre_text, next_text)
 	.pagination
 		ul.clearfix
