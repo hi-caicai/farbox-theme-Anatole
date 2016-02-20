@@ -134,10 +134,10 @@ a:hover, a:active {
 }
 
 .page-top{
-	width: 59.9%;
+	width: 60%;
 	position: fixed;
 	right: 0;
-	z-index: 9999;
+	z-index: 3;
 	background-color: #fff;
 	height: 60px;
 	border-bottom: 1px solid #f2f2f2;
@@ -203,6 +203,7 @@ a:hover, a:active {
 	top: 0;
 	left:0;
 	position: fixed;
+	z-index: 4;
 	border-right: 1px solid #f2f2f2;
 
 	.logo-title{
@@ -731,6 +732,7 @@ a.btn {
 		width: 100%;
 		position:absolute;
 		border-right:none;
+		z-index: 1;
 			.logo-title{
 				padding-top: 120px;
 			
@@ -754,6 +756,8 @@ a.btn {
 	.content{
 		margin-top: 420px;
 		width: 100%;
+		z-index: 2;
+		position: absolute;
 	}
 	.footer{
 		display: none;

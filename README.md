@@ -7,6 +7,9 @@ This theme is desiged for FarBox,You can use it directly or modified it on FarBo
 
 ![](https://hicaicai.b0.upaiyun.com/work/ahjsgd73.png)
 
+### 支持移动端访问
+
+宽度小于960px 的时候，自动改为移动端样式（上下结构）便于移动端用户进行访问
 
 ### 快速使用
 
