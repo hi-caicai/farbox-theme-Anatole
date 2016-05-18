@@ -26,9 +26,10 @@ This theme is desiged for FarBox,You can use it directly or modified it on FarBo
 
 ### Ghost博客版本
 
-[@ygbhf](http://yangjinkun.cn/) 童鞋,制作了ghost 版本，如果有需要移步到他的 [仓库](https://github.com/ygbhf/anatole-ghost-theme), 万分感谢@ygbhf 移植～
+[@ygbhf](http://yangjinkun.cn/) 童鞋,制作了 Ghost 版本，如果有需要移步到他的 [仓库](https://github.com/ygbhf/anatole-ghost-theme), 万分感谢@ygbhf 移植～
 
-
+[@Jorb](http://jorb.me/) 童鞋也移植了一个 Ghost 版本，比较完美。如果需要移步到他的 [仓库](https://github.com/unh1de/Ghost-Theme-Anatole
+)
 ### 说明
 
 - 主题默认使用了谷歌字体，如果加载速度不满意，请自行切换
