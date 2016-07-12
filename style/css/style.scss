@@ -584,6 +584,16 @@ a:hover, a:active {
 		font-size: 22px;
 	}
 }
+/* links*/
+.links{
+	margin: 30px;
+	h3{
+		font-size: 22px;
+	}
+	a{
+		cursor: pointer;
+	}
+}
 /* 评论样式 */
 
 .comment-count {
@@ -730,7 +740,10 @@ a.btn {
 
 }
 
-
+.page_404{
+	text-align:center;
+	padding-top:50px;
+}
 @media screen and (max-width: 960px) {
 	.sidebar {
 		width: 100%;

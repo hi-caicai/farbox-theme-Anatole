@@ -41,7 +41,7 @@ html
 							i.fa.fa-instagram
 				if site.configs.dribbble
 					li
-						a(href="https://dribbbble.com/{{site.configs.dribbble}}")
+						a(href="https://dribbble.com/{{site.configs.dribbble}}")
 							i.fa.fa-dribbble
 				if site.configs.weibo
 					li
@@ -71,6 +71,11 @@ html
 							a.current(href="/archive") Archive
 						else
 							a(href="/archive") Archive
+					li
+						if request.url_without_host=='/links'
+							a.current(href="/links") Links					
+						else
+							a(href="/links") Links
 				.information					
 					.back_btn
 						li

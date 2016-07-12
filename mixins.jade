@@ -12,7 +12,7 @@ mixin make_post(post, is_detail=False)
 			.post-content= post.content.limit(200).no_pic
 		.post-footer:.meta
 			.info
-				i.fa.fa-calendar
+				i.fa.fa-sun-o
 				span.date= post.date.format("%Y-%m-%d")
 				if site.configs.disqus
 					i.fa.fa-comment-o
